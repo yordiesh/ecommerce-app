@@ -1,0 +1,130 @@
+/* ==========================================
+   Admin Dashboard Specific Styling
+   ========================================== */
+
+.admin-wrapper {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f3f4f6;
+}
+
+.admin-sidebar {
+    width: 260px;
+    background-color: #1f2937;
+    color: white;
+    padding: 2rem 1.5rem;
+}
+
+.admin-sidebar h2 {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #818cf8;
+}
+
+.admin-nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.admin-nav-links a {
+    color: #9ca3af;
+    text-decoration: none;
+    display: block;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.admin-nav-links a:hover, 
+.admin-nav-links a.active {
+    background-color: #374151;
+    color: white;
+}
+
+.admin-content {
+    flex: 1;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+/* Admin Metrics Grid */
+.admin-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.metric-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #4f46e5;
+}
+
+.metric-card h3 {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+}
+
+.metric-card p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+/* Admin Data Tables */
+.admin-table-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.admin-table th {
+    background-color: #f9fafb;
+    padding: 1rem;
+    font-size: 0.85rem;
+    color: #6b7280;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.admin-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+    color: #1f2937;
+    font-size: 0.95rem;
+}
+
+.admin-table tr:hover {
+    background-color: #f9fafb;
+}
+
+/* Status Badges */
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.badge-pending {
+    background-color: #fef3c7;
+    color: #d97706;
+}
+
+.badge-completed {
+    background-color: #d1fae5;
+    color: #059669;
+}
